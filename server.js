@@ -9,6 +9,8 @@ var app = express();
 
 app.set('views', './views');
 
+var JSON = {"size": ""};
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -17,6 +19,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", function(req,res){
   res.sendFile(__dirname + '/views/home.html');
+});
+
+app.post("/upload", upload.single('filetoupload'), function(req, res, next) {
+  JSON["size"] = req.file.size;
+  res.json(JSON);
 });
 
 app.listen(process.env.PORT || 3000, function() {

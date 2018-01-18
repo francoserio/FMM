@@ -21,12 +21,9 @@
         </div>
       </div>
       <div>
-        <form action="upload" method="post" >
-          <label for="file-upload" class="btn btn-primary">
-            Custom Upload
-          </label>
-          <input id="file-upload" type="file"/>
-          <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+        <form action="upload" method="post" enctype="multipart/form-data">
+          <input type="file" name="filetoupload"><br>
+          <input type="submit">
         </form>
       </div>
       <footer>
