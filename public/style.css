@@ -1,0 +1,26 @@
+h1 {
+  font-family: 'Joti One', cursive;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #DCD3D3;
+}
+
+p {
+  font-weight: bold;
+  font-style: italic;
+}
+
+footer {
+  padding: 50px;
+  text-align: center;
+}
+
+a {
+  font-size: 25px;
+}

@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>
-      File Metadata Microservice
-    </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-  </head>
+<head>
+  <title>
+    File Metadata Microservice
+  </title>
+  <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.css' />
+  <link rel='stylesheet' href='/style.css' />
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' />
+  <link href="https://fonts.googleapis.com/css?family=Joti+One|Lato" rel="stylesheet">  </head>
   <body>
-    <h1>User Stories</h1>
-    <blockquote>
-      <p>I can submit a FormData object that includes a file upload.</p>
-      <p>When I submit something, I will receive the file size in bytes within the JSON response</p>
-    </blockquote>
+    <div class="container">
+      <h1>File Metadata Microservice</h1>
+      <h2>User Stories</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <blockquote class="blockquote">
+            <p class="text-primary mb-0">- I can submit a FormData object that includes a file upload.</p>
+            <p class="text-primary mb-0">- When I submit something, I will receive the file size in bytes within the JSON response</p>
+          </blockquote>
+        </div>
+      </div>
+      <div>
+        <form action="upload" method="post" >
+          <label for="file-upload" class="btn btn-primary">
+            Custom Upload
+          </label>
+          <input id="file-upload" type="file"/>
+          <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+      <footer>
+        <div class="row">
+          <a href="https://www.github.com/francoserio"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/franco-serio-458666b3/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <p>Copyright © Franco Serio</p>
+      </footer>
+    </div>
   </body>
-</html>
+  <script src="/bootstrap/dist/jquery/jquery.js"></script>
+  </html>
